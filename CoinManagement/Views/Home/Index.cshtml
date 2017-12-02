@@ -1,0 +1,82 @@
+﻿@using CoinManagement.Models.Cex
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>BTC</th>
+                <th>ETH</th>
+                <th>DASH</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @Model[0].Ask
+                </td>
+                <td>
+                    @Model[1].Ask
+                </td>
+                <td>
+                    @Model[2].Ask
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="row">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Coin</th>
+            <th>Fiyat</th>
+            <th>Net Fark</th>
+            <th>Yüzdesel Fark</th>
+        </tr>
+        </thead>
+        <tbody>
+            @{
+                decimal BTCPrice = Model[0].Ask;
+                decimal ETHPrice = Model[1].Ask;
+                decimal DASHPrice = Model[2].Ask;
+
+            }
+            @foreach (PriceComparison crncy in @Model)
+            {
+                if(crncy.Exchange!="Koineks") { continue; }
+                if (crncy.Currency == "BCH" || crncy.Currency == "ZEC") {continue;}
+                <tr>
+                    <td>
+                        <b>@crncy.Currency</b>
+                    </td>
+                    <td>
+                        @crncy.Ask.ToString("F")
+                    </td>
+                    <td>
+                        @crncy.Disparity.ToString("F")
+                    </td>
+                    <td>
+                        @{
+                                    switch (crncy.Currency)
+                                    {
+                                        case "BTC":
+                                            <div>% @((crncy.Disparity / BTCPrice * 100).ToString("F"))</div>
+                                            break;
+                                        case "ETH":
+                                            <div>% @((crncy.Disparity / ETHPrice * 100).ToString("F"))</div>
+                                            break;
+                                        case "DASH":
+                                            <div>% @((crncy.Disparity / DASHPrice * 100).ToString("F"))</div>
+                                            break;
+                                    }
+                                }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,11 @@
+c:\users\fatih\Source\Repos\CoinManagement\CoinManagement\bin\Debug\netcoreapp2.0\CoinManagement.deps.json
+c:\users\fatih\Source\Repos\CoinManagement\CoinManagement\bin\Debug\netcoreapp2.0\CoinManagement.runtimeconfig.json
+c:\users\fatih\Source\Repos\CoinManagement\CoinManagement\bin\Debug\netcoreapp2.0\CoinManagement.runtimeconfig.dev.json
+c:\users\fatih\Source\Repos\CoinManagement\CoinManagement\bin\Debug\netcoreapp2.0\CoinManagement.dll
+c:\users\fatih\Source\Repos\CoinManagement\CoinManagement\bin\Debug\netcoreapp2.0\CoinManagement.pdb
+c:\users\fatih\Source\Repos\CoinManagement\CoinManagement\obj\Debug\netcoreapp2.0\CoinManagement.csprojResolveAssemblyReference.cache
+c:\users\fatih\Source\Repos\CoinManagement\CoinManagement\obj\Debug\netcoreapp2.0\CoinManagement.csproj.CoreCompileInputs.cache
+c:\users\fatih\Source\Repos\CoinManagement\CoinManagement\obj\Debug\netcoreapp2.0\CoinManagement.AssemblyInfoInputs.cache
+c:\users\fatih\Source\Repos\CoinManagement\CoinManagement\obj\Debug\netcoreapp2.0\CoinManagement.AssemblyInfo.cs
+c:\users\fatih\Source\Repos\CoinManagement\CoinManagement\obj\Debug\netcoreapp2.0\CoinManagement.dll
+c:\users\fatih\Source\Repos\CoinManagement\CoinManagement\obj\Debug\netcoreapp2.0\CoinManagement.pdb
